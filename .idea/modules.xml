@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/PHP-Basic-Course.iml" filepath="$PROJECT_DIR$/.idea/PHP-Basic-Course.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/PHP Basic course.iml" filepath="$PROJECT_DIR$/.idea/PHP Basic course.iml" />
+>>>>>>> 9ffb23befad0ef1d33d92c8abe3372f2211843b1
     </modules>
   </component>
 </project>
