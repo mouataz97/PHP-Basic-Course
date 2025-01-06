@@ -45,3 +45,11 @@ $programminglanguages = [   // multi dimensional array
 ];
 
 echo $programminglanguages['python'][0]['releasedDate'];
+
+$myArray = ['a', 'b', 'c', 50 => 'd', 'e', 'f'];
+
+print_r($myArray);
+
+array_pop($myArray); // remove the last array
+array_shift($myArray); // remove the first array
+
