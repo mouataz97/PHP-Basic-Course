@@ -11,6 +11,11 @@ for($i = 0; print $i, $i <= strlen($text); $i++){
 }
 echo "<br>";
 
+$text = ['a', 'b', 'c', 'd', 'e', 'f' ];
+for($i = 0; $i <= count($text); $i++){
+    echo $text[$i];
+}
+echo "<br>";
 # while
 
 while ($i < 10) {
@@ -34,7 +39,7 @@ foreach (range(1, 10) as $i) {
 }
 echo "<br>";
 
-foreach(range(1, 10) as $i){
-    echo "<br>";
-    echo "hello number ". $i;
+$programminglanguagess = ['php', 'java', 'c#', 'javascript', 'python'];
+foreach ($programminglanguagess as $lang => &$language) {
+    echo $lang . " " . $language;
 }
