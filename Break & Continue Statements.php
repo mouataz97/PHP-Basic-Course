@@ -43,3 +43,5 @@ $programminglanguagess = ['php', 'java', 'c#', 'javascript', 'python'];
 foreach ($programminglanguagess as $lang => &$language) {
     echo $lang . " " . $language;
 }
+
+print_r($programminglanguagess);
