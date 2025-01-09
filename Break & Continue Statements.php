@@ -6,7 +6,7 @@ $i = 1;
 
 /** @var integer $i */
 
-for($i; $i <= 10; $i++){
+for($i; print $i, $i <= 10; $i++){
     echo " ".$i;
 }
 echo "<br>";
