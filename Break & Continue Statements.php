@@ -5,9 +5,9 @@ $i = 1;
 # loops
 
 /** @var integer $i */
-
-for($i; print $i, $i <= 10; $i++){
-    echo " ".$i;
+$text = "hello world";
+for($i = 0; print $i, $i <= strlen($text); $i++){
+    echo $text[$i];
 }
 echo "<br>";
 
