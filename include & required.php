@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -8,8 +9,10 @@
  */
 
 include 'file.php';
+
+echo $x++ . "<br>";
+
 require_once 'file.php';
-$x++;
 
 echo $x . "<br>";
 
