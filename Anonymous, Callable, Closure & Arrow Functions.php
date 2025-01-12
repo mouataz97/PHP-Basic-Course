@@ -2,13 +2,15 @@
 
 // Anonymous, Callable, Closure & Arrow Functions
 
-function sum(int|float ...$numbers): int|float{
-    return array_sum($numbers);
+function sum(callable $callback, int|float ...$numbers): int|float{
+    return $callback(array_sum($numbers));
 }
 
-echo sum(12,23,-5);
-
 // call back function
+
+echo sum(function($element){
+    return $element * 2;
+},12,23,-5);
 
 $array1 = [1, 2, 3];
 $array2 = array_map(function($element){
