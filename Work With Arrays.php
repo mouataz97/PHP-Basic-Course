@@ -33,3 +33,13 @@ $merged = array_merge($array1, $array2); // use the bigger number if they have t
 prettyPrintArray($merged);
 
 // array_reduce
+$innovice_items = [
+    ['price' => 9.99, 'qty' => 3, 'desc' => 'item 1'],
+    ['price' => 3.99, 'qty' => 2, 'desc' => 'item 2'],
+    ['price' => 4,49, 'qty' => 5, 'desc' => 'item 3']
+];
+
+$total = array_reduce($innovice_items, fn($sum, $item) => $sum +  $item['price'] * $item['qty']);
+echo $total;
+
+// array_search
