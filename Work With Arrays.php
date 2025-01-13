@@ -43,3 +43,23 @@ $total = array_reduce($innovice_items, fn($sum, $item) => $sum +  $item['price']
 echo $total;
 
 // array_search
+$array = ['a','b','c','d','e','ab','bc','cd','de'];
+$search = array_search('ab', $array);
+echo $search;
+
+if(!in_array('ab', $array)){
+    echo 'not found';
+}else{
+    echo 'found';
+}
+
+// array_diff array_diff_assoc
+prettyPrintArray(array_diff($array1, $array2));
+prettyPrintArray(array_diff_assoc($array1, $array2));
+
+// array sort
+$key_numbers = ['a' => 1, 'b' => 2, 'c' => 3, 4 => 6, 5 => 5];
+asort($key_numbers);
+prettyPrintArray($key_numbers);
+
+// array distructor
