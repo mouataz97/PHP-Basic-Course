@@ -5,6 +5,7 @@ $i = 1;
 # loops
 
 /** @var integer $i */
+
 $text = "hello world";
 for($i = 0; print $i, $i <= strlen($text); $i++){
     echo $text[$i];
