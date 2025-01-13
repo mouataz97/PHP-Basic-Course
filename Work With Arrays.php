@@ -62,4 +62,8 @@ $key_numbers = ['a' => 1, 'b' => 2, 'c' => 3, 4 => 6, 5 => 5];
 asort($key_numbers);
 prettyPrintArray($key_numbers);
 
-// array distructor
+// array destructor
+
+$myarray1 = [1, 2, 3];
+[1 => $a, 2 => $b, 3 => $c] = $myarray1;
+echo $a . ', ' . $b . ', ' . $c . '<br>';
