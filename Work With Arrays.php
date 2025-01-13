@@ -18,6 +18,9 @@ prettyPrintArray(array_combine($keys, $values)); // the length of keys and value
 
 // array_filter
 
-$array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-$even = array_filter($array, fn($number) => $number % 2 == 0); //fn callback function check if $number % 2 = 0
+$array = [1, 2, 3, 4, 5, false, [], 7, 8, 10];
+$even = array_filter($array, fn($number) => $number % 2 == 0, ARRAY_FILTER_USE_BOTH); //fn callback function check if $number % 2 = 0
+
 prettyPrintArray($even);
+$keys = array_keys($array, 10);
+prettyPrintArray($keys);
