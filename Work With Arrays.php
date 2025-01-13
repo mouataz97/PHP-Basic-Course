@@ -4,23 +4,32 @@ require 'dumpFile.php';
 
 // Work With Arrays
 // array_chunk
-
 $items = ['a' => 1, 'b' => 2, 'c' => 3];
 
 prettyPrintArray(array_chunk($items, 2, true)); // back to dumpFile.php
 
 // array_combine uses 2 arrays 1 as key and the other as value
-
 $keys = ['a', 'b', 'c'];
 $values = [1, 2, 3];
 
 prettyPrintArray(array_combine($keys, $values)); // the length of keys and values should be matched
 
 // array_filter
-
-$array = [1, 2, 3, 4, 5, false, [], 7, 8, 10];
+$array = [1, 2, 3, 4, 5, 7, 8, 10];
 $even = array_filter($array, fn($number) => $number % 2 == 0, ARRAY_FILTER_USE_BOTH); //fn callback function check if $number % 2 = 0
 
 prettyPrintArray($even);
 $keys = array_keys($array, 10);
 prettyPrintArray($keys);
+
+$array1 = ['a' => 1,'b' => 2,'c' => 3 ];
+$array2 = ['a' => 4,'d' => 5,'c' => 6];
+$array3 = array_map(fn($number1, $number2) => $number1 * $number2, $array1, $array2);
+prettyPrintArray($array3);
+
+// array_merge
+echo 'test';
+$merged = array_merge($array1, $array2); // use the bigger number if they have the same key
+prettyPrintArray($merged);
+
+// array_reduce
