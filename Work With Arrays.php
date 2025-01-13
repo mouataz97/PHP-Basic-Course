@@ -1,5 +1,7 @@
 <?php
 
+require 'dumpFile.php';
+
 // Work With Arrays
 // array_chunk
 

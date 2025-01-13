@@ -1,7 +1,5 @@
 <?php
 
-require 'Work With Arrays.php';
-
 function prettyPrintArray($array)
 {
     echo '<pre>';
