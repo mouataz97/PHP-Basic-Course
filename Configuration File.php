@@ -1,1 +1,3 @@
 <?php
+
+// php ini & configuration
