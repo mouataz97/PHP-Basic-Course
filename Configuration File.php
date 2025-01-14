@@ -16,10 +16,11 @@ ini_set('max_execution_time' , 3);
 
 sleep(5);
 echo 'Hello World';
-*/
+
 var_dump(ini_get('memory_limit'));
 $string = 'x';
 for($i = 0; $i < 1000; $i++){
     $string .= $string;
 }
 echo $string;
+*/
