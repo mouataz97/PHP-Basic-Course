@@ -10,6 +10,17 @@ var_dump($dir);
 
 if(file_exists('file.txt')){
     echo filesize('file.txt');
+    file_put_contents('file.txt', 'Hello World');
+    clearstatcache();
 }else{
     echo "file not found";
 }
+
+// Opning file
+$file = @fopen('file.txt', 'r'); // r for ressource and @ is to avoid errors
+
+// Reading file
+while($line = fgets($file) != false){
+    echo $line . '<br>';
+}
+
