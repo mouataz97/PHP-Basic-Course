@@ -24,3 +24,10 @@ while($line = fgets($file) != false){
     echo $line . '<br>';
 }
 
+$content = file_get_contents('file.txt', offset: 10, length: 10); // show content from count 10 and count the next 10 letters
+echo $content;
+
+file_put_contents('file.txt', 'hello world');
+copy('file.txt','newfile.txt');
+rename('newfile.txt','file2.txt');
+fclose($file); // close the file
